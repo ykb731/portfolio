@@ -12,7 +12,6 @@
   <script src="./assets/js/color-modes.js"></script>
   <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="./assets/css/carousel.css" rel="stylesheet" />
-  <link href="./assets/css/checkout.css" rel="stylesheet" />
   <link href="./assets/css/style.css" rel="stylesheet" />
   <meta name="theme-color" content="#712cf9" />
 </head>
@@ -26,22 +25,14 @@
 
   <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-body-tertiary">
-      <div class="container">
+      <div class="container-lg">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-            viewBox="0 0 24 24">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-            <circle cx="12" cy="13" r="4"></circle>
-          </svg>
+          <i class="bi bi-camera me-2"></i>
           <strong>Portfolio</strong>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <ul class="navbar-nav mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#about"><i
                   class="bi bi-person-lines-fill me-2 fs-6"></i></i>About</a>
@@ -58,8 +49,7 @@
               </a>
             </li>
           </ul>
-          <!-- <button id="lang-toggle" class="btn btn-outline-light ms-lg-5 btn-sm">言語 | 日本語</button> -->
-
+          <button id="lang-toggle" class="btn btn-outline-light btn-sm">言語 | 日本語</button>
           <div class="dropdown bd-mode-toggle">
             <button class="btn btn-outline-light ms-2 btn-sm dropdown-toggle d-flex align-items-center" id="bd-theme"
               type="button" data-bs-toggle="dropdown">
@@ -81,11 +71,15 @@
               <li>
                 <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
                   <i class="bi bi-circle-half me-2 opacity-50"></i> Auto
-                </button>
               </li>
             </ul>
           </div>
         </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
   </header>
@@ -102,17 +96,23 @@
         <div class="carousel-item active">
           <img src="./assets/img/mv1.jpg" alt="">
           <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Python Developer Portfolio</h1>
-              <p class="opacity-75">
-                GUI applications, API integration, and
-                practical tools built with Python.
+            <div class="carousel-caption text-start lang-ja">
+              <h1 class="lang-ja">Python開発ポートフォリオ</h1>
+              <h1 class="lang-en" style="display: none;">Python Developer Portfolio</h1>
+
+              <p class="lang-ja">
+                Pythonを中心に、GUIアプリやAPI連携などの実用的なツールを開発しています。
               </p>
+
+              <p class="lang-en" style="display: none;">
+                Building practical GUI applications and API-driven tools with Python.
+              </p>
+
               <p>
-                <a class="btn btn-lg btn-outline-light" href="#works"><i class="bi bi-arrow-right me-2"></i>View My
-                  Work</a>
+                <a class="btn btn-lg btn-primary" href="#works">View My Work</a>
               </p>
             </div>
+
           </div>
         </div>
         <div class="carousel-item">
@@ -159,22 +159,26 @@
 
           <div class="lead text-body-secondary">
             <p class="text-muted fs-5 lang-ja">
-              現在、職業訓練でPythonを学んでいます。Webデザインとコーディングに加え、WordPressのテンプレート作成やPHPの軽微な修正も可能です。</p>
-            <p class="text-muted fs-5 lang-en" style="display: none;">I’m currently leveling up my Python skills through
-              a vocational course. My background is in Web Design and Coding, and I can build WordPress themes from
-              scratch. I also handle PHP updates and simple bug fixes.</p>
+              Pythonを中心に、GUIアプリやAPI連携などの実用的な開発に取り組んでいます。
+              現在は職業訓練でPythonを学びながら、ユーザーにとって使いやすいアプリケーションの開発を意識しています。
+            </p>
+            <p class="text-muted fs-5 lang-en" style="display: none;">
+              I focus on building practical applications using Python, including GUI tools and API integration.
+              Currently, I am improving my Python skills through a vocational training program while developing
+              user-friendly applications.
+            </p>
 
             <ul class="fs-5 list-unstyled lh-lg lang-ja">
-              <li>🐍 Python の勉強中です</li>
-              <li>💻 Webデザイン ＆ コーディング</li>
-              <li>🛠️ WordPressのテンプレート作成</li>
-              <li>✨ PHP の軽微な修正が可能です</li>
+              <li>🐍 Python（GUIアプリ / API連携）</li>
+              <li>💻 Webデザイン & コーディング（HTML / CSS / Bootstrap）</li>
+              <li>🛠️ WordPressテーマ作成</li>
+              <li>✨ PHPの軽微な修正・保守</li>
             </ul>
             <ul class="fs-5 list-unstyled lh-lg lang-en" style="display: none;">
-              <li>🐍 Python Trainee</li>
-              <li>💻 Web Designer & Coder</li>
-              <li>🛠️ WordPress Theme Creator</li>
-              <li>✨ PHP Maintenance & Quick Fixes</li>
+              <li>🐍 Python (GUI apps / API integration)</li>
+              <li>💻 Web Design & Coding (HTML / CSS / Bootstrap)</li>
+              <li>🛠️ WordPress Theme Development</li>
+              <li>✨ PHP Maintenance & Bug Fixes</li>
             </ul>
           </div>
           <!-- <p>
@@ -289,12 +293,19 @@
               <img src="./assets/img/thumbnail6.jpg" alt="">
               <div class="card-body d-flex flex-column">
                 <h3 class="card-title">Zipcode Search</h3>
-                <div class="card-text fs-3">
+                <div class="card-text fs-3 lang-ja">
                   <ul>
                     <li>API通信（requests）</li>
                     <li>GUI（Tkinter）</li>
-                    <li>入力バリデーション・エラーハンドリング</li </ul>
+                    <li>入力バリデーション・エラーハンドリング</li>
+                  </ul>
                 </div>
+                <p class="card-text lang-en" style="display: none;">
+                  A Python GUI application that retrieves Japanese address information from a zipcode using an external
+                  API.
+                  Features API integration, input validation, and robust error handling for a smooth user experience.
+                </p>
+
                 <div class="d-flex justify-content-end align-items-center mt-auto">
 
                   <div class="btn-group">
@@ -313,8 +324,12 @@
               <img src="./assets/img/thumbnail1.jpg" alt="">
               <div class="card-body d-flex flex-column">
                 <h3 class="card-title">Task Tool</h3>
-                <p class="card-text">
+                <p class="card-text lang-ja">
                   Pythonで作成したタスク管理ツール。JSONでデータ保存を実装。
+                </p>
+                <p class="card-text lang-en" style="display: none;">
+                  A simple task management tool built with Python.
+                  Supports adding, updating, and saving tasks using JSON for persistent data storage.
                 </p>
                 <div class="d-flex justify-content-end align-items-center mt-auto">
                   <div class="btn-group">
@@ -333,8 +348,12 @@
               <img src="./assets/img/thumbnail5.jpg" alt="">
               <div class="card-body d-flex flex-column">
                 <h3 class="card-title">Kanji Quiz</h3>
-                <p class="card-text">
+                <p class="card-text lang-ja">
                   漢字クイズアプリ。学習用途を想定したシンプルUI。
+                </p>
+                <p class="card-text lang-en" style="display: none;">
+                  A Kanji quiz application built with Python and Tkinter.
+                  Loads quiz data from a CSV file and provides interactive answer input with feedback.
                 </p>
                 <div class="d-flex justify-content-end align-items-center mt-auto">
                   <div class="btn-group">
@@ -353,8 +372,12 @@
               <img src="./assets/img/thumbnail5.jpg" alt="">
               <div class="card-body d-flex flex-column">
                 <h3 class="card-title">inch-converter</h3>
-                <p class="card-text">
+                <p class="card-text lang-ja">
                   インチをセンチに変換するツールです。
+                </p>
+                <p class="card-text lang-en" style="display: none;">
+                  A lightweight Python tool for converting inches to centimeters.
+                  Designed as a simple and easy-to-use utility for quick calculations.
                 </p>
                 <div class="d-flex justify-content-end align-items-center mt-auto">
                   <div class="btn-group">
