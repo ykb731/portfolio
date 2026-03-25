@@ -8,7 +8,6 @@ body {
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -18,6 +17,7 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+  top: 10rem;
   bottom: 3rem;
   z-index: 10;
 }
@@ -26,7 +26,6 @@ body {
 .carousel-item {
   height: 32rem;
 }
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -38,11 +37,10 @@ body {
 }
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 /* rtl:end:ignore */
-
 
 /* Featurettes
 ------------------------- */
@@ -54,7 +52,7 @@ body {
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 /* rtl:end:remove */
